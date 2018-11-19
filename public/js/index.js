@@ -5,7 +5,7 @@ socket.on('connect', function () {
 });
 
 socket.on('newMessage', function (message) {
-  console.log(`Message from ${message.from} sent at ${message.createAt}: ${message.text}`);
+  console.log(`Message from ${message.from} sent at ${message.createdAt}: ${message.text}`);
 });
 
 socket.on('disconnect', function () {
